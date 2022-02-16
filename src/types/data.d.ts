@@ -1,20 +1,24 @@
-export interface ExcerciseItem {
+export interface ExcerciseTemplate {
   id: string,
   name: string,
-  src: string,
+  src?: string,
 }
 
 export interface ExcerciseConf {
-  excercise: ExcerciseItem,
-  reps: number,
-  series: number,
-  rec: string,
+  reps?: number,
+  series?: number,
+  rec?: string,
   weight?: number,
   time?: string,
 }
 
+export interface Excercise {
+  template: ExcerciseTemplate,
+  conf: ExcerciseConf
+}
+
 export interface ExcerciseCard {
-  instances: Array<ExcerciseConf>,
+  instances: Array<Excercise>,
 }
 
 export interface ExcerciseCards {
