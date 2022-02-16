@@ -6,8 +6,9 @@ import {
   useStore as vuexUseStore,
 } from 'vuex';
 
-// import example from './module-example'
-// import { ExampleStateInterface } from './module-example/state';
+
+import data from './data'
+import { DataStateInterface } from './data/state';
 
 /*
  * If not building with SSR mode, you can
@@ -22,7 +23,7 @@ export interface StateInterface {
   // Define your own store structure, using submodules if needed
   // example: ExampleStateInterface;
   // Declared as unknown to avoid linting issue. Best to strongly type as per the line above.
-  example: unknown;
+  data: DataStateInterface;
 }
 
 // provide typings for `this.$store`
@@ -40,6 +41,7 @@ export default store(function (/* { ssrContext } */) {
   const Store = createStore<StateInterface>({
     modules: {
       // example
+      data
     },
 
     // enable strict mode (adds overhead!)
