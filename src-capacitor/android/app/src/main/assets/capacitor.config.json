@@ -1,0 +1,10 @@
+{
+  "appId": "it.my_trainer",
+  "appName": "MyWorkout",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "server": {
+    "url": "http://192.168.1.77:8080"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "appId": "it.my_trainer",
+  "appName": "MyWorkout",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
